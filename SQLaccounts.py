@@ -1,11 +1,12 @@
 import MySQLdb
 import pyrogram
 from os import path, getenv
+from configs import config
 
-DB_HOST = 'localhost' 
-DB_USER = 'root' 
-DB_PASS = '' 
-DB_NAME = 'accounts'
+DB_HOST = config.DB_HOST
+DB_USER = config.DB_USER 
+DB_PASS = config.DB_PASS 
+DB_NAME = config.DB_NAME
 
 conn = MySQLdb.connect(host = DB_HOST, user = DB_USER, password = DB_PASS, database = DB_NAME)
 
