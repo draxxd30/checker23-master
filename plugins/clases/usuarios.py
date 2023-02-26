@@ -1,12 +1,13 @@
 import pyrogram
 import MySQLdb
+from configs import config
 
 class usuario:
 
-    DB_HOST = 'localhost'
-    DB_USER = 'root'
-    DB_PASS = ''
-    DB_NAME = 'accounts'
+    DB_HOST = config.DB_HOST
+    DB_USER = config.DB_USER
+    DB_PASS = config.DB_PASS
+    DB_NAME = config.DB_NAME
 
     def __init__(self, nombre, id):
         self.nombre = nombre
